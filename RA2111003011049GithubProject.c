@@ -1,10 +1,9 @@
-#include <stdio.h>
+#include<stdio.h> 
 int main()
-{   int a,b,c,d;
-    scanf("%d %d %d %d",&a,&b,&c,&d); if((a*b)>=(c*d))
-     printf("%d",a*b);
-    else 
-     printf("%d",c*d);
-   
+{
+   int length,width,height,surfacearea;
+   scanf("%d%d%d%d",&length,&width,&height,&surfacearea);
+   surfacearea=2*(width*length+length*height+height*width);
+   printf("%d\n",surfacearea);
    return 0;
 }
